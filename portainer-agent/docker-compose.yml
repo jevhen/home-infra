@@ -3,7 +3,7 @@ version: "3.8"
 services:
   agent:
     image: portainer/agent:2.18.3
-    container_name: portainer_agent
+    container_name: portainer_agent_managed
     ports:
         - 9001:9001
     restart: always
