@@ -1,0 +1,8 @@
+youtube-dl:
+  image: "nbr23/youtube-dl-server:yt-dlp"
+  volumes:
+    - /media/hdd/youtube-dl-server/youtube-dl:/youtube-dl
+    - /media/hdd/youtube-dl-server/app_config/config.yml:/app_config/config.yml:ro # Overwrite the container's config file with your own configuration
+  ports:
+    - '8081:8080'
+  restart: always
