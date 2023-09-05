@@ -1,5 +1,6 @@
 services:
   youtube-dl:
+    container_name: "youtube-dl-server"
     image: "nbr23/youtube-dl-server:yt-dlp"
     volumes:
       - /media/hdd/youtube-dl-server/youtube-dl:/youtube-dl
