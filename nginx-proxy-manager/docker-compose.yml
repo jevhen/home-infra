@@ -16,9 +16,9 @@ services:
       - ./letsencrypt:/etc/letsencrypt
 
 networks:
-  default:
+  proxy-localhost:
     external: true
     name: proxy-localhost
-  nextcloud:
+  nextcloud-aio:
     external: true
     name: nextcloud-aio
