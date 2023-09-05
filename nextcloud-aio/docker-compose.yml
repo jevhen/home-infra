@@ -61,3 +61,8 @@ volumes:
 #       driver: default
 #       config:
 #         - subnet: fd12:3456:789a:2::/64 # IPv6 subnet to use
+
+networks:
+  default:
+    external: true
+    name: proxy-localhost
