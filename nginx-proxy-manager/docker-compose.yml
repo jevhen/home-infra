@@ -15,6 +15,10 @@ services:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
 
+    networks:
+      - proxy-localhost
+      - nextcloud-aio
+
 networks:
   proxy-localhost:
     external: true
