@@ -19,6 +19,12 @@ services:
     networks:
       - proxy-localhost
       - nextcloud-aio
+    environment:
+      DISABLE_IPV6: 'true'
+    healthcheck:
+      test: ["CMD", "/bin/check-health"]
+      interval: 10s
+      timeout: 3s
 
 networks:
   proxy-localhost:
