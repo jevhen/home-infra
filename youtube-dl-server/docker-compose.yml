@@ -1,7 +1,7 @@
 services:
   youtube-dl:
     container_name: "youtube-dl-server"
-    image: "nbr23/youtube-dl-server:yt-dlp"
+    image: "nbr23/youtube-dl-server:4f5c70d-yt-dlp"
     volumes:
       - /media/hdd/youtube-dl-server/youtube-dl:/youtube-dl
       - /media/hdd/youtube-dl-server/app_config/config.yml:/app_config/config.yml:ro # Overwrite the container's config file with your own configuration

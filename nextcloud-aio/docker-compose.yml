@@ -1,6 +1,6 @@
 services:
   nextcloud:
-    image: nextcloud/all-in-one:latest
+    image: nextcloud/all-in-one:20231027_071516-latest
     restart: always
     container_name: nextcloud-aio-mastercontainer # This line is not allowed to be changed as otherwise AIO will not work correctly
     volumes:
